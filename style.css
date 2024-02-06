@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+ width: 100%;
+ height: 80px;
+ line-height: 80px;
+ background-color: blueviolet;
+}
+.nav{
+ max-width: 1200px;
+ margin: auto;
+}
+.nav .logo{
+    padding-left: 10px;
+    float: left;
+}
+
+.nav .menu ul {
+    margin: 0px;
+    float: right;
+    list-style: none;
+}
+.nav .menu ul li{
+    display: inline-block;
+ width: 120px;
+ margin: 0px;
+ text-align: center;
+}
+.nav .menu ul li a{
+ text-decoration: none;
+ color: rgb(27, 22, 22);
+ padding: 5px 15px;
+ box-sizing: border-box;
+
+}
+.nav .menu ul li a:hover{
+    border-bottom: 1px solid red;
+}
+.nav .menu .mega-menu{
+    width: 80%;
+    background-color: antiquewhite;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    padding-bottom: 20px;
+    display: none;
+}
+.nav .menu .mega-menu li {
+    width: 19%;
+}
+.nav .menu ul li:hover .mega-menu {
+    display: inline-block;
+}
+
+
+.nav .menu .mega-menu li a:hover{
+ border-bottom: none;
+}
+.nav .menu .mega-menu .mega-sub{
+    width: 100%;
+}
+.nav .menu .mega-menu .mega-sub li{
+    display: block;
+    text-align: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    border-right: 1px solid blueviolet;
+}
+.nav .menu .mega-menu .mega-sub li:hover a{
+    text-decoration: underline;
+    color: blueviolet;
+}
+.nav .menu .mega-menu .photo{
+    width: 100%;
+    height: 150px;
+    border: 2px solid red;
+    overflow: hidden;
+}
+.nav .menu .mega-menu .photo img{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    transition: 2s;
+
+}
+.nav .menu .mega-menu .mega-sub img:hover{
+    transform: scale(1.3);
+    transition: 2s;
+
+}
